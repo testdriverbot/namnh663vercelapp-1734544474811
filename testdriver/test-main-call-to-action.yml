@@ -1,0 +1,13 @@
+version: 4.1.30
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Identify the main call to action button on the homepage.
+    commands:
+      - command: scroll
+        direction: down
+      - command: scroll-until-text
+        text: Contact Me
+        direction: down
